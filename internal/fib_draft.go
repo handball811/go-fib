@@ -1,4 +1,4 @@
-// +build draft
+//go:build draft
 package internal
 
 func fib(n int) (int, error) {
