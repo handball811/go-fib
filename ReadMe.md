@@ -1,6 +1,25 @@
 # Fib
 
 ## 変更履歴
+### FibGen6の作成
+- ChatGPTによる精製
+- 出力内容は`fib_gen6.go`
+- 3分程度完了
+- 一番最初の入力として開始
+- 返り値の型が正しくない
+```
+Go1.19で指定されたフィボナッチ数列の値を取得できるような関数を以下のコードの続きとして出力してください。
+入力が負の値の場合ErrNegativeというエラーを返すようにしてください
+ErrNegativeの定義を削除してください。すでに定義されています。
+関数は行列を利用して高速化してください。
+出力はコードブロックの形式にしてください
+package internal
+
+func fib(n int) (int, error) {
+	return 0, nil
+}
+```
+
 ### FibGen5の作成
 - ChatGPTによる精製
 - 出力内容は`fib_gen5.go`
@@ -42,20 +61,7 @@ fib関数の処理効率が悪いです。改善してください
 - FibGen2の生成の続きとして生成する
 - テストは問題なくパスしています
 ```
-package internal
-
-func fib(n int) (int, error) {
-	if n < 0 {
-		return 0, ErrNegative
-	} else if n == 0 {
-		return 0, nil
-	} else if n == 1 {
-		return 1, nil
-	}
-	n1, _ := fib(n - 1)
-	n2, _ := fib(n - 2)
-	return n1 + n2, nil
-}
+ErrNegativeの定義を削除してください。すでに定義されています。
 ```
 
 ### FibGen2の作成
