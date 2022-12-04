@@ -1,6 +1,19 @@
 # Fib
 
 ## 変更履歴
+
+### FibGen4の作成
+- ChatGPTによる精製
+- 出力内容は`fib_gen4.go`
+- 3分程度完了
+- FibGenTestの続き
+- 速度改善を要求
+- 関数名は変更
+- テストは負の値の時に失敗する
+```
+fib関数の処理効率が悪いです。改善してください
+```
+
 ### FibGenTestの作成
 - ChatGPTによる精製
 - 出力内容は`fib_gen_test.go`
