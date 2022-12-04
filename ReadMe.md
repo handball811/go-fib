@@ -1,6 +1,16 @@
 # Fib
 
 ## 変更履歴
+### FibGen5の作成
+- ChatGPTによる精製
+- 出力内容は`fib_gen5.go`
+- 3分程度完了
+- FibGen4の続き
+- エラーの解消を要求
+- テストの修正は完了した
+```
+memoizedFib関数は入力が負の値の時にStackOverflowとなります。入力の値が負の値の時はエラーを返すように修正してください
+```
 
 ### FibGen4の作成
 - ChatGPTによる精製
