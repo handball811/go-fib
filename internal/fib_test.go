@@ -1,5 +1,3 @@
-//go:build fast
-
 package internal
 
 import "testing"
