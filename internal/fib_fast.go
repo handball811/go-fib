@@ -2,8 +2,6 @@
 
 package internal
 
-import "fmt"
-
 func fib(n int) (int, error) {
 	if n < 0 {
 		return 0, ErrNegative
@@ -14,7 +12,6 @@ func fib(n int) (int, error) {
 	ans := []int{1, 1, 1, 0} // 2
 	m := []int{1, 1, 1, 0}   // 2
 	for i <= n {
-		fmt.Println(i, m[0])
 		if (n & i) != 0 {
 			mul(ans, m)
 		}
